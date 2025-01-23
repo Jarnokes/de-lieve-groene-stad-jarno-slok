@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Lieve Groene Stad - Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- Ik heb de scroll animatie gemaakt met behulp van AI die Berry met mij gedeeld heeft tijdens de les ik zal hieronder de link naar dat AI gesprek zetten
+    URL: https://www.perplexity.ai/search/ik-wil-de-grootte-en-positie-v-YWPvGHvJS1W_teoWy4eEyw -->
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var logo = document.getElementById('logo');
+            if (window.scrollY > 75) {
+                logo.style.width = '7em';
+                logo.style.top = '1em';
+                logo.style.left = '2em';
+                logo.style.zIndex = '1002'; // Boven de nav na scrollen
+            } else {
+                logo.style.width = '18.75em';
+                logo.style.top = '8em';
+                logo.style.left = '2em';
+                logo.style.zIndex = '5'; // Onder de nav voor scrollen
+            }
+        });
+    </script>
+
+
+    <header>
+        <!-- Ik heb het hamburger menu gemaakt met behulp van de AI Perplexity  ik zal hieronder het complete gesprek delen ook heb ik in dit gesprek de scroll animatie deels aangepast wat niet in het vorige gesprek stond
+    URL: https://www.perplexity.ai/search/maak-een-javascript-lose-hambu-l05_achfQsGpLVKowFjPQw -->
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over-ons.html">Over ons</a></li>
+                <li><a href="locaties.html">Locaties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index">
+        <img id="logo" src="./images/logo.svg" alt="Logo 3 Cent Per Gram">
+    </main>
+
+    <section class="bg-beige">
+        <section>
+            <h2>Mijn Ervaring</h2>
+            <p>Toen ik voor het eerst KiloKilo binnenliep, viel mijn oog meteen op het winkelmandje waarin je je kleding moest wegen om de prijs te bepalen: 3 cent per gram. Ik was direct geïnteresseerd in deze winkel en vond het een leuk initiatief waar
+                ik graag meer mee wilde doen. <br><br> deel ik wat andere mensen van KiloKilo vinden en waar je nog meer KiloKilo-winkels in Nederland kunt vinden.</p>
+        </section>
+    </section>
+
+    <section>
+        <img src="./images/papierscheur.svg" alt="Papier scheur">
+    </section>
+
+
+    <section class="bg-transparant">
+        <section>
+            <h2 class="beige-headers">Reviews</h2>
+        </section>
+    </section>
+
+
+    <section class="review-block">
+        <img src="./images/papierscheur-omhoog.svg" alt="Papier scheur" width="337">
+        <article class="review-card">
+            <section>
+                <img src="./images/alecpfp.svg" alt="Profiel foto Alec">
+                <h3>Alec</h3>
+                <p>De winkel is echt een aanrader voor als je goedkoop vintage kleding wilt kopen!</p>
+                <section class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty-star">★</span>
+                </section>
+            </section>
+        </article>
+        <img src="./images/papierscheur.svg" alt="Papier scheur" width="337">
+    </section>
+
+    <section class="review-block">
+        <img src="./images/papierscheur-omhoog.svg" alt="Papier scheur" width="337">
+        <article class="review-card">
+            <section>
+                <img src="./images/meespfp.svg" alt="Profiel foto Mees">
+                <h3>Mees</h3>
+                <p>Hou je van oude weerk kleding dan is dit de plek voor jou!</p>
+                <section class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty-star">★</span>
+                </section>
+            </section>
+        </article>
+        <img src="./images/papierscheur.svg" alt="Papier scheur" width="337">
+    </section>
+
+    <section class="review-block">
+        <img src="./images/papierscheur-omhoog.svg" alt="Papier scheur" width="337">
+        <article class="review-card">
+            <section>
+                <img src="./images/thompfp.svg" alt="Profiel foto Thom">
+                <h3>Thom</h3>
+                <p>Hou je van oude weerk kleding dan is dit de plek voor jou!</p>
+                <section class="stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty-star">★</span>
+                </section>
+            </section>
+        </article>
+        <img src="./images/papierscheur2.svg" alt="Papier scheur" width="337">
+    </section>
+
+
+    <footer>
+        <a href="https://www.facebook.com/kilokilovintage"><img src="./images/fb-logo.svg" alt="Facebook icoon" width="32"></a>
+        <a href="https://www.tiktok.com/@kilokilovintage?"><img src="./images/tiktok-logo.svg" alt="tiktok icoon" width="32"></a>
+        <a href="https://www.instagram.com/kilokilovintage"><img src="./images/instagram-logo.svg" alt="Instagram icoon" width="32"></a>
+        <a href="https://www.facebook.com/kilokilovintage"><img src="./images/spotify-logo.svg" alt="Facebook icoon" width="32"></a>
+    </footer>
+
+
+
+
+</body>
+
+</html>

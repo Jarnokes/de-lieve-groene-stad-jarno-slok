@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "PT mono", sans-serif;
+    background-image: url('./images/bg.png');
+}
+
+
+/*Ik heb de scroll animatie gemaakt met behulp van AI die Berry met mij gedeeld heeft tijdens de les ik zal hieronder de link naar dat AI gesprek zetten
+URL: https://www.perplexity.ai/search/ik-wil-de-grootte-en-positie-v-YWPvGHvJS1W_teoWy4eEyw lijn 18 tot 25 */
+
+#logo {
+    position: fixed;
+    top: 8em;
+    left: 2em;
+    width: 18.75em;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+#logo-overig {
+    position: absolute;
+    width: 7em;
+    left: 2em;
+    top: 1em;
+}
+
+header {
+    background-color: #001524;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+}
+
+
+/* Ik heb het hamburger menu gemaakt met behulp van de AI Perplexity  ik zal hieronder het complete gesprek delen ook heb ik in dit gesprek de scroll animatie deels aangepast wat niet in het vorige gesprek stond
+    URL: https://www.perplexity.ai/search/maak-een-javascript-lose-hambu-l05_achfQsGpLVKowFjPQw  van lijn 51 tot 97*/
+
+nav {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 2.3em;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFECD1;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #FFECD1;
+    height: 0.125em;
+    width: 2em;
+    border-radius: 0.125em;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 0.4375em;
+}
+
+.nav-toggle-label span::after {
+    top: 0.4375em;
+}
+
+.index {
+    padding-top: 5em;
+    padding-bottom: 15em;
+    /* Adjust based on your header height */
+}
+
+main {
+    padding-top: 5em;
+    /* Adjust based on your header height */
+}
+
+h1,
+h2,
+h3 {
+    font-family: "PT mono", sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2 {
+    font-weight: 700;
+    text-decoration: underline;
+    padding-top: 0.3em;
+}
+
+.beige-headers {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #FFECD1;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p {
+    font-family: "Poppins";
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+.tekstwit {
+    font-family: "Poppins";
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    color: #FFECD1;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 4.375em;
+        right: -100%;
+        background-color: #001524;
+        width: 100%;
+        height: calc(100% - 4.375em);
+        flex-direction: column;
+        align-items: flex-end;
+        transition: right 0.3s ease;
+        padding-right: 2em;
+        z-index: 1000;
+    }
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+    .nav-toggle-label {
+        display: block;
+    }
+    .nav-toggle:checked~.nav-menu {
+        right: 0;
+    }
+}
+
+.bg-beige {
+    background-color: #FFECD1;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 1.5625em;
+    border-top-right-radius: 1.5625em;
+}
+
+.bg-transparant {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review-card {
+    width: 90vw;
+    padding: 1em;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #FFECD1;
+}
+
+.review-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.empty-star {
+    color: #001524;
+}
+
+.stars {
+    color: #F26522;
+}
+
+.header-img {
+    display: flex;
+    overflow: hidden;
+}
+
+.buttons {
+    background-color: #F26522;
+    border-radius: 0.3125em;
+    padding: 0.3em 0.8em;
+    color: #FFFBEF;
+    text-decoration: none;
+}
+
+.card {
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFECD1;
+}
+
+footer {
+    display: flex;
+    color: #FFFBEF;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #F26522;
+    gap: 2em;
+}
+
+footer a {
+    color: #FFFBEF;
+}
